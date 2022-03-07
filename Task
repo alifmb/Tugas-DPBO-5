@@ -1,0 +1,21 @@
+class Person:
+    def m(self):
+        print("NIK, Name, Gender, sleep")
+ 
+class Airplane(Person):
+    def m(self):
+        print("type, age, wingsLength")
+        super().m()
+ 
+class Ship(Person):
+    def m(self):
+        print("age, type, countryOfManufacture")
+        super().m()
+ 
+class Vehicle(Airplane, Ship):
+    def m(self):
+        print(" fuelType, maxPassengers, Move")  
+        super().m()
+      
+obj = Vehicle()
+obj.m()
